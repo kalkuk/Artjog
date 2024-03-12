@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/yro2plw.css">
+    <script language="Javascript" type="text/Javascript" src="js/quote.js" defer></script>
+    <script language="Javascript" type="text/Javascript" src="js/slides.js" defer></script>
+    <script language="Javascript" type="text/Javascript" src="js/cardSlider.js" defer></script>
 </head>
 <body>
-    <section class="wrapper">
-        <header class="d-flex">
-            <div class="logo"><img src="assets/logo.png" alt=""></div>
+    <section class="wrapper first">
+        <header class="d-flex header">
+            <div class="logo"><img src="assets/dddynamite.svg" alt=""></div>
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Event</a>
@@ -23,66 +27,321 @@
                 <a href="#" class="btn">Subscribe</a>
             </div>
         </header>
-    </section>
-
-    <section class="wrapper hero">
-        <div class="hero-top d-flex">
-            <div class="hero-top-left">
-                <h1>ARTJOG</h1>
-                <h1>Expanding</h1>
-                <h1>Awareness</h1>
-                <div class="hero-icon">
-                    <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="29.5" cy="29.5" r="29.5" fill="#8B8B8B"/>
-                        </svg>
-                        
+        <div class="hero">
+            <div class="hero-top d-flex">
+                <div class="hero-top-left">
+                    <h1>ARTJOG</h1>
+                    <h1>Expanding</h1>
+                    <h1>Aware<span class="expand">n</span>ess</h1>
+                    <div class="hero-icon">
+                        <img src="assets/stamp.svg" alt="">            
+                    </div>
+                </div>
+                <div class="hero-top-right">
+                    <div class="placeholder"></div>
+                    <p>Artjog is a contemporary art festival whose main purpose is art exhibitions.</p>
+                    <a href="#" class="btn">Get Ticket</a>
                 </div>
             </div>
-            <div class="hero-top-right">
-                <div class="placeholder"></div>
-                <p>Artjog is a contemporary art festival whise main purpose is art exhibitions.</p>
-                <a href="#" class="btn">Get Ticket</a>
-            </div>
-            </div>
-        </div>
-        <div class="hero-gallery wrapper">
-            <div>
-                <img src="assets/geri-mis-btpqhY1vWvQ-unsplash.jpg" alt="">
-            </div>
-            <div class="d-flex pagination">
-                <svg width="72" height="12" viewBox="0 0 72 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 0 12)" fill="#131313"/>
-                    <circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 20 12)" fill="#969696"/>
-                    <circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 40 12)" fill="#969696"/>
-                    <circle cx="6" cy="6" r="6" transform="matrix(1 0 0 -1 60 12)" fill="#969696"/>
-                    </svg>
-                    
-                    
-                    
+            
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <img src="assets/geri-mis-btpqhY1vWvQ-unsplash.jpg" >
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="assets/gallery2.jpg" >
+                </div>
+                
+                <div class="mySlides fade"> 
+                  <img src="assets/gallery3.jpg" > 
+                </div>
+
+                <div class="mySlides fade"> 
+                    <img src="assets/gallery4.jpg" > 
+                  </div>
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+
+
             </div>
         </div>
         <h3>
-            ARTJOG MMXXII: Arts in Common - Expanding Awareness concludes the blabla blablablablafhh
-            bklad Expanding Awareness concludes the blabla blablablablafhh
-            bklad Expanding Awareness concludes the blabla blabla'.
+            ARTJOG MMXXII: Arts in Common - Expanding Awareness One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections'.
         </h3>
-        <div class="hero-bottom">
+        <div class="hero-bottom d-flex">
             <div class="card">
+                <div class="card-top d-flex">
+                    <img src="assets/palette.svg" alt="">
+                    <h3>300+</h3>
+                </div>
+                <h5>artworks</h5>
+            </div>
+            <div class="card">
+                <div class="card-top d-flex">
+                    <img src="assets/smart_outlet.svg" alt="">
+                    <h3>100+</h3>
+                </div>
+                <h5>artists</h5>
+            </div>
+            <div class="card">
+                <div class="card-top d-flex">
+                    <img src="assets/stock_media.svg" alt="">
+                    <h3>20+</h3>
+                </div>
+                <h5>bands</h5>
+            </div>
                 
+            
+        </div>
+        <img src="assets/background.svg" class="back" alt="">
+    </section>
+
+    <section class="events">
+        <div class="wrapper events-top d-flex ">
+            <h2>Upcoming Events</h2>
+            <a href="javascript:;" onclick="slideCards('left')" ><img src="assets/Arrow.svg" alt=""></a> 
+        </div>
+
+        <div class="wrapper">
+            <div class="events-gallery d-flex">
+                <div class="gallery-item">
+                    <div class="img-abs">
+                        <img src="assets/DAte-2.svg" class="badge" alt="">
+                    </div>
+                   
+                    <img src="assets/Frame1.png" alt="">
+                    <h5>Artist Artist <br>Big Baga Show</h5>
+                   
+                </div>
+                <div class="gallery-item">
+                    <div class="img-abs">
+                        <img src="assets/DAte.svg" class="badge" alt="">
+                    </div>
+                   
+                    <img src="assets/Frame2.png" alt="">
+                    <h5>Waga Baga Maga <br>Buhuu Whuhuu Arena</h5>
+                   
+                </div>
+                <div class="gallery-item">
+                    <div class="img-abs">
+                        <img src="assets/DAte-1.svg" class="badge" alt="">
+                    </div>
+                   
+                    <img src="assets/Frame3.png" alt="">
+                    <h5>Mega Mess <br>Aa Bee</h5>
+                   
+                </div>
+                <div class="gallery-item">
+                    <div class="img-abs">
+                        <img src="assets/DAte-1.svg" class="badge" alt="">
+                    </div>
+                   
+                    <img src="assets/Frame4.png" alt="">
+                    <h5>Baba Jaga Duu <br>New Rewal</h5>
+                   
+                </div>
+            </div>
+          
+        </div>
+        
+       
+    </section>
+
+    <section class="category wrapper">
+        <div class="category-header">
+            <h2>We Have Many<br>Category Events</h2>
+            <p>A wonderful serenity has taken possession of my entire soul, like these <br>sweet mornings of spring which I enjoy with .</p>
+        </div>
+        <div class="category-content">
+            <div class="category-item d-flex">
+                <div class="inner-grid">
+                    <img src="assets/Frame12.png" alt="">
+                    <div class="item-info">
+                        <h4>High-End Events</h4>
+                        <p>Common sense is like deodorant. The people who need it most never use it.</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item d-flex">
+                <div class="inner-grid">
+                    <img src="assets/Frame9.png" alt="">
+                    <div class="item-info">
+                        <h4>Beautiful Events</h4>
+                        <p>If I’m not back in five minutes, just wait longer.</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item d-flex">
+                <div class="inner-grid">
+                    <img src="assets/Frame10.png" alt="">
+                    <div class="item-info">
+                        <h4>Natural Events</h4>
+                        <p>As you get older, three things happen. The first is your memory goes, and I can’t remember the other two</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item d-flex">
+                <div class="inner-grid">
+                    <img src="assets/Frame11.png" alt="">
+                    <div class="item-info">
+                        <h4>Walking Events</h4>
+                        <p>A day without sunshine is like, you know, night</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item d-flex">
+                <div class="inner-grid">
+                    <img src="assets/Frame13.png" alt="">
+                    <div class="item-info">
+                        <h4>Full-of-Love Events</h4>
+                        <p>Instead of the mahi mahi, may I just get the one mahi</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item d-flex">
+                <div class="inner-grid">
+                    <img src="assets/Frame14.png" alt="">
+                    <div class="item-info">
+                        <h4>Drink'n'Dance Events</h4>
+                        <p>Never do anything out of hunger. Not even eating.</p>
+                        <a href="#">See Details</a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="wrapper testimonials-header">
+            <h2>What People<br>Say?</h2>
+            <div class="testimonials-items d-flex">
+               <div class="person">
+                    <img src="assets/person1.png" alt="">
+               </div>
+               <div class="person">
+                <img src="assets/person2.png" alt="">
+                </div> 
+                <div class="person">
+                    <img src="assets/person3.png" alt="">
+               </div>
+               <div class="person">
+                    <img src="assets/person4.png" alt="">
+                </div>
+                <div class="person">
+                    <img src="assets/person5.png" alt="">
+               </div>
+               <div class="person">
+                    <img src="assets/person6.png" alt="">
+                </div>
+                <div class="person">
+                    <img src="assets/person7.png" alt="">
+               </div>
+               <div class="person">
+                     <img src="assets/person8.png" alt="">
+                </div>
+                <div class="person">
+                    <img src="assets/person9.png" alt="">
+               </div>
+            </div>
+            <h5 class="quote" id="quote">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary</h5>
+            <h4 id="author" class="author">Jacob Jones</h4>
+           
+        </div>
+        
+        <div class="wrapper testimonials-footer d-flex">
+            <a href="javascript:;" id="prevQuoteBtn" onclick="prevQuote();"><img src="assets/arrow_back.svg" alt="Previous"></a>
+            <a href="javascript:;" id="nextQuoteBtn" onclick="nextQuote();"><img src="assets/arrow_next.svg" alt="Next"></a>    
+        </div>
+        <img src="assets/background.svg" class="testimonial-back" alt="">
+    </section>
+
+    <section class="sponsor wrapper">
+        <div class="sponsor-header d-flex">
+            <h2>Sponsor Of Big<br>Company</h2>
+        </div>
+        <div class="sponsor-item">
+            <div class="sponsor-card d-flex">
+                <img src="assets/Company1.svg" alt="">
+            </div>
+            <div class="sponsor-card">
+                <img src="assets/Company2.svg" alt="">
+            </div>
+            <div class="sponsor-card">
+                <img src="assets/Company3.svg" alt="">
+            </div>
+            <div class="sponsor-card">
+                <img src="assets/Company4.svg" alt="">
+            </div>
+            <div class="sponsor-card">
+                <img src="assets/Company5.svg" alt="">
+            </div>
+            <div class="sponsor-card">
+                <img src="assets/Company6.svg" alt="">
+            </div>
+            <div class="sponsor-card">
+                <img src="assets/Company7.svg" alt="">
+            </div>
+            <div class="sponsor-card">
+                <img src="assets/Company8.svg" alt="">
+            </div>
+        </div>
+        <img src="assets/background.svg" class="sponsor-back" alt="">
+
+    </section>
+
+    <section class="footer">
+        <div class="wrapper d-flex">
+            <div class="right-footer">
+                <div class="right-footer-top">
+                    <h2>Ready to go?</h2>
+                    <p>If there are question you want to ask, we will answer gladly</p>
+                    <form>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                      </form>
+                </div>
+                <div class="right-footer-bottom d-flex">
+                    <img src="assets/facebook.svg" alt="">
+                    <img src="assets/instagram.svg" alt="">
+                    <img src="assets/twitter.svg" alt="">
+                    <img src="assets/Frame 1.svg" alt="">
+                </div>
+            </div>
+            <div class="left-footer d-flex">
+                <div class="left-item1">
+                    <h4>Event</h4>
+                    <p>Music</p>
+                    <p>Automotive</p>
+                    <p>Stand Up Comedy</p>
+                    <p>Culture</p>
+                    <p>Fashion</p>
+                    <p>Food</p>
+                </div>
+                <div class="left-item2">
+                    <h4>Community</h4>
+                    <p>Blog</p>
+                    <p>Partner</p>
+                    <p>Charity</p>
+                </div>
+                <div class="left-item3">
+                    <h4>Support</h4>
+                    <p>Contact Us</p>
+                    <p> FAQ</p>
+                    <p>Legal Notice</p>
+                </div>
             </div>
         </div>
     </section>
-    <section>
 
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
 </body>
 </html>

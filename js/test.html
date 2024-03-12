@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Slider</title>
+<style>
+  .card-slider {
+    overflow: hidden;
+    width: 300px; /* Adjust the width as needed */
+    margin: 0 auto;
+    position: relative;
+  }
+  .card-container {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  .card {
+    flex: 0 0 100px; /* Adjust the card width as needed */
+    height: 150px; /* Adjust the card height as needed */
+    margin: 0 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: #ccc;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .slider-arrow.left {
+    left: 0;
+  }
+  .slider-arrow.right {
+    right: 0;
+  }
+</style>
+</head>
+<body>
+
+<div class="card-slider">
+  <div class="slider-arrow left" onclick="slideCards('left')">◄</div>
+  <div class="slider-arrow right" onclick="slideCards('right')">►</div>
+  <div class="card-container" id="cardContainer">
+    <!-- Cards will be dynamically populated here -->
+  </div>
+</div>
+
+<script>
+// Array of sample card data
+var cardData = [
+  { title: "Card 1", content: "Content 1" },
+  { title: "Card 2", content: "Content 2" },
+  { title: "Card 3", content: "Content 3" },
+  { title: "Card 4", content: "Content 4" },
+  { title: "Card 5", content: "Content 5" },
+  { title: "Card 6", content: "Content 6" }
+];
+
+// Function to initialize card slider
+function initializeSlider() {
+  var cardContainer = document.getElementById("cardContainer");
+  cardData.forEach(function(card) {
+    var cardElement = document.createElement("div");
+    cardElement.className = "card";
+    cardElement.innerHTML = "<h3>" + card.title + "</h3><p>" + card.content + "</p>";
+    cardContainer.appendChild(cardElement);
+  });
+}
+
+// Function to slide cards
+function slideCards(direction) {
+  var cardContainer = document.getElementById("cardContainer");
+  var cards = cardContainer.children;
+  var firstCard = cards[0];
+  var lastCard = cards[cards.length - 1];
+
+  if (direction === "left") {
+    cardContainer.appendChild(firstCard);
+  } else if (direction === "right") {
+    cardContainer.insertBefore(lastCard, cardContainer.firstChild);
+  }
+}
+
+// Initialize the slider
+initializeSlider();
+</script>
+
+</body>
+</html>
